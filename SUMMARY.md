@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [安裝Lektor](lektor/README.md)
-* [Quick Start](quick_start/README.md)
-* [專案架構](project_tree/專案架構.md)
+* [安裝Lektor](lektor/2_install.md)
+* [Quick Start](lektor/3_quick_start.md)
+* [專案架構](lektor/4_專案架構.md)
 
