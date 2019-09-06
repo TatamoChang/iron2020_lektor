@@ -1,4 +1,8 @@
-# Quick Start 初窺Lektor功能
+---
+typora-root-url: ../
+---
+
+# Quick Start
 
 ## 建立新專案
 
@@ -21,7 +25,7 @@
 最後會要你確認是否要建立專案，勇敢地按下去，專案就出來了！！
 ![Create Project](/assets/螢幕快照 2019-09-04 上午12.18.11.png)
 
-## 執行專案
+## 本機端測試專案
 
 在專案的資料夾中輸入以下命令，即可檢視成果。
 `$ lektor server`
@@ -37,3 +41,17 @@
 ![edit page](/assets/螢幕快照 2019-09-04 上午12.39.54.png)
 
 裡面除了可以編輯、預覽、刪除，還可以直接新增頁面、子頁面以及附件等功能，這真的是靜態網頁可以做到的嗎？！
+
+## 建立靜態網頁檔案
+
+既然要將專案放到github上，首先要將專案變為靜態網頁的格式，讓github pages讀得懂這個專案。使用以下指令：
+
+`$ lektor build`
+
+這樣就會建立一個完整的靜態網站資料夾，但你應該會發現......根本不知道檔案在哪！！
+
+使用下列指令就可以找到轉換為的靜態檔案放在哪裡：
+
+`$ lektor project-info --output-path`
+
+像我的電腦是放在：`/Users/tatamo/Library/Caches/Lektor/builds/6c1377bc5ee9f5288d66ae257755b225`，將這個資料夾裡面的檔案放到github上，就可以使用GitHub pages檢視網站內容囉！！

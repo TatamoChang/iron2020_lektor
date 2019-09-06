@@ -12,8 +12,10 @@
 
 Lektor 是一個靜態網頁產生工具，可以將專案生成靜態網頁發布。在[Lektor · PyPI](https://pypi.org/project/Lektor/)，`Lektor支援Python2.7, 3.5, 3.6, 3.7`，似乎一開始僅支援Python2，幸好現在已有支援我較為熟悉的Python3，因此接下來的文章將使用Python3.7來寫。
 
-* 安裝
-* 快速開始
+本系列文章的目標就是利用Lektor開發出一個完整的網站，並將其發佈至github。
+
+* Installation 安裝
+* Quickstart 快速開始
 * Project 專案
 * Content 內容
 * Templates 範本
