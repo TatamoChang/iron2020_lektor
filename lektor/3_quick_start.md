@@ -55,3 +55,7 @@ typora-root-url: ../
 `$ lektor project-info --output-path`
 
 像我的電腦是放在：`/Users/tatamo/Library/Caches/Lektor/builds/6c1377bc5ee9f5288d66ae257755b225`，將這個資料夾裡面的檔案放到github上，就可以使用GitHub pages檢視網站內容囉！！
+
+![github pages](/assets/螢幕快照 2019-09-08 上午12.25.49.png)
+
+經過`lektor build`產生的網頁不會有右上角的筆（編輯模式）出現，所以可以安心地將網頁發布到網路上，以免被人修改。
