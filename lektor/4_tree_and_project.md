@@ -1,19 +1,31 @@
 ---
 typora-root-url: ../
 ---
-Lektor專案架構
+Lektor專案架構及Project檔案
 ======
 
 讓我們先看一下Lektor quickstart blog範例的整個專案架構，進入專案資料夾中，會看到`1個檔案及4個資料夾`：
 
 ```
 .
-|____LektorTest.lektorproject
-|____content
+|____LektorTest.lektorproject（專案設定檔）
+|____content（放置網頁內容檔案，
 |____models
 |____templates
 |____assets
 ```
+以下做簡單的介紹，
+- LektorTest.lektorproject
+    - 專案設定檔
+- content
+    - 放置網頁內容檔案，透過`models`分析，並渲染到`templates`。
+- models
+    - 這邊的models就跟Django很像。Lektor透過models的設定，建立起強大的藍圖，使靜態網頁動態化的功能。
+- templates
+    - 使用templates，可建立網站模板，有效的運用template可以讓網站開發更加有效率。
+- assets
+    - 跟一般網頁規則差不多，放置靜態文件如`css`等。
+
 ## Project File
 
 `Project File`我稱為專案檔，裡面放置此專案的相關資訊。當使用`quickstart`建立專案後，此檔案會以專案名稱為檔名，副檔名則為`.lektorproject`。
@@ -81,10 +93,30 @@ lektor-webpack-support = 0.1
 
 ### [servers.\*]
 
+此項目提供部署設定，當開發時若有測試機及正式機等兩個以上的伺服器部署時，可以利用此項目建立不同伺服器的設定，並且在部署時增加設定的名稱（取代`*`的部分），Lektor就會依照該名稱的設定內容進行部署。例如我完成正式機的部署設定如下，我就可以透過`$ lektor deploy production`的方式將專案部署到伺服器上：
 
+```ini
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://server/path/to/folder
+```
+因為`server.production`在這邊設定為default，在輸入命令時也可以直接省略名稱：`$ lektor deploy`
 
-## Content
+### [alternatives.\*]
 
-## Models
-## Templates
-## Assets
+當網頁有多語言需求的時候可以使用，預設為關閉，也就是沒有多語言選項。
+以下為建立`en`及`fr`兩種語言的範例：
+
+```ini
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US
+
+[alternatives.fr]
+name = French
+url_prefix = /fr/
+locale = fr
+```
