@@ -8,8 +8,8 @@ Lektor專案架構及Project檔案
 
 ```
 .
-|____LektorTest.lektorproject（專案設定檔）
-|____content（放置網頁內容檔案，
+|____LektorTest.lektorproject
+|____content
 |____models
 |____templates
 |____assets
@@ -26,9 +26,11 @@ Lektor專案架構及Project檔案
 - assets
     - 跟一般網頁規則差不多，放置靜態文件如`css`等。
 
+大致了解整個架構之後，接下來開始說明各個項目的細節吧，首先是`*.lektorproject`，也就是專案設定檔！
+
 ## Project File
 
-`Project File`我稱為專案檔，裡面放置此專案的相關資訊。當使用`quickstart`建立專案後，此檔案會以專案名稱為檔名，副檔名則為`.lektorproject`。
+`Project File`我稱為專案設定檔，裡面放置此專案的相關資訊。當使用`quickstart`建立專案後，此檔案會以專案名稱為檔名，副檔名則為`.lektorproject`。
 
 我在建立專案時命名為`LektorTest`，因此這邊的專案檔即為`LektorTest.lektorproject`。打開檔案，裡面只包含一個資訊，也就是專案名稱：
 ```
