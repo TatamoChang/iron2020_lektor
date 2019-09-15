@@ -7,7 +7,6 @@ module.exports = {
       sidebarDepth: 0,
       sidebar: [
         ['/', 'Day1_Introduction'],
-        ['/lektor/6_temp', 'temp'],
       ],
       nav: [
         { text: 'Home', link: '/' },
