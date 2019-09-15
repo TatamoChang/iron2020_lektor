@@ -24,7 +24,7 @@ Template中有一些特定的變數要先了解一下：
 
 先來看一下之前用quickstart產生的範例檔案，開啟`template/page.html`，可以看到以下程式碼：
 
-```jinja2
+```html
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
@@ -39,7 +39,7 @@ Template中有一些特定的變數要先了解一下：
 
 在第一行出現的```{% extends "layout.html" %}```，代表這個檔案會參照`layout.html`的內容。以下是`layout.html`的內容：
 
-```jinja2
+```html
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
@@ -69,7 +69,7 @@ Template中有一些特定的變數要先了解一下：
 ### block title
 
 首先看到`page.html`第2行：
-```jinja2
+```html
 {% block title %}{{ this.title }}{% endblock %}
 ```
 這行程式碼就會取代`layout.html`裡面的`{% block title %}Welcome{% endblock %}`。
@@ -94,7 +94,7 @@ type = markdown
 ### block body
 
 `page.html`剩下的程式碼長這樣：
-```jinja2
+```html
 {% block body %}
   <h2>{{ this.title }}</h2>
   {{ this.body }}
