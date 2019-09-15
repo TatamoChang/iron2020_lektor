@@ -10,7 +10,7 @@ module.exports = {
       ],
       nav: [
         { text: 'Home', link: '/' },
-        { text: '鐵人賽連結', link: ''},
+        { text: '鐵人賽連結', link: 'https://ithelp.ithome.com.tw/users/20112552/ironman/2735'},
         { text: 'Github', link: 'https://github.com/haninfinity/30lektor' }
       ]
     }
