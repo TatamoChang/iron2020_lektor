@@ -6,7 +6,8 @@ module.exports = {
     themeConfig: {
       sidebarDepth: 0,
       sidebar: [
-        ['/', 'Day1_Introduction'],
+        ['/', 'Day1_30天學習Lektor鐵人賽介紹 '],
+        ['/lektor/2_installation', 'Day2_Lektor安裝說明'],
       ],
       nav: [
         { text: 'Home', link: '/' },
