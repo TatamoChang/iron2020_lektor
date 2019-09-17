@@ -1,3 +1,7 @@
+---
+typora-root-url: ..\assets
+---
+
 Themes
 ===
 
@@ -67,3 +71,21 @@ themes = lektor-theme-nix
 [project]
 themes = lektor-theme-nix, lektor-theme-other-them
 ```
+
+
+
+# lektor-theme-nix 外觀
+
+既然安裝了`lektor-theme-nix`主題，來看一下安裝後會長甚麼樣子!
+
+在設定`.lektorproject`後迅速使用`$ $lektor serve`開啟，發現......跟原本的長一樣阿!
+
+請先深吸一口氣，然後慢慢往下拉。
+
+![1568701682233](../assets/1568701682233.png)
+
+這是因為Lektor主題都是以page.html為預設檔案，但是原本的專案資料夾中已經有同樣的檔案，刪掉原本專案資料夾中的html檔案後就會出現主題的樣貌!
+
+![lektor-theme-nix](../assets/1568701425260.png)
+
+他的左上角的`@ ~ $`有點詭異，究竟是怎麼回事呢?我們下一篇來看一下`lektor-theme-nix`
