@@ -8,6 +8,7 @@ module.exports = {
       sidebar: [
         ['/', 'Day1_30天學習Lektor鐵人賽介紹 '],
         ['/lektor/2_installation', 'Day2_Lektor安裝說明'],
+        ['/lektor/3_quick_start', 'Day3_quickstart'],
       ],
       nav: [
         { text: 'Home', link: '/' },

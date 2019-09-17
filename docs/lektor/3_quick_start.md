@@ -1,8 +1,5 @@
----
-typora-root-url: ../
----
-
-# Quick Start
+Quick Start
+===
 
 ## 建立新專案
 
@@ -11,19 +8,20 @@ typora-root-url: ../
 此時終端機中會引導你輸入相關資訊，建立專案。
 
 第一步會讓你輸入專案名稱
-![Step1](/assets/螢幕快照 2019-09-04 上午12.08.45.png)
+
+![Step1](../assets/20190904120845.png)
 
 第二步需要輸入作者名稱
-![Step2](/assets/螢幕快照 2019-09-04 上午12.11.48.png)
+![Step2](../assets/20190904121148.png)
 
 接下來要確認專案的位置
-![Step3](/assets/螢幕快照 2019-09-04 上午12.13.04.png)
+![Step3](../assets/20190904121304.png)
 
 第四步確認是否要建立基本的部落格模組，我這邊選`是`，才能看到更完整的範例網站長什麼樣子。
-![Step4](/assets/螢幕快照 2019-09-04 上午12.14.48.png)
+![Step4](../assets/20190904121448.png)
 
 最後會要你確認是否要建立專案，勇敢地按下去，專案就出來了！！
-![Create Project](/assets/螢幕快照 2019-09-04 上午12.18.11.png)
+![Create Project](../assets/20190904121811.png)
 
 ## 本機端測試專案
 
@@ -31,14 +29,14 @@ typora-root-url: ../
 `$ lektor server`
 
 看到類似以下畫面即代表成功建立囉！
-![lektor server result](/assets/螢幕快照 2019-09-04 上午12.28.02.png)
+![lektor server result](../assets/20190904122802.png)
 
 在終端機中點網址或在瀏覽器輸入`http://127.0.0.1:5000/`，看一下剛剛建立的專案長什麼樣子吧！
-![首頁畫面](/assets/螢幕快照 2019-09-04 上午12.32.42.png)
+![首頁畫面](../assets/20190904123242.png)
 
 首頁為`Welcome`，網頁中還有`Blog`、`Projects`、`About`頁面，右上角有個鉛筆個圖示，點進去後則進入編輯的畫面。
 
-![edit page](/assets/螢幕快照 2019-09-04 上午12.39.54.png)
+![edit page](../assets/20190904123954.png)
 
 裡面除了可以編輯、預覽、刪除，還可以直接新增頁面、子頁面以及附件等功能，這真的是靜態網頁可以做到的嗎？！
 
@@ -56,6 +54,6 @@ typora-root-url: ../
 
 像我的電腦是放在：`/Users/tatamo/Library/Caches/Lektor/builds/6c1377bc5ee9f5288d66ae257755b225`，將這個資料夾裡面的檔案放到github上，就可以使用GitHub pages檢視網站內容囉！！
 
-![github pages](/assets/螢幕快照 2019-09-08 上午12.25.49.png)
+![github pages](../assets/20190908122549.png)
 
 經過`lektor build`產生的網頁不會有右上角的筆（編輯模式）出現，所以可以安心地將網頁發布到網路上，以免被人修改。

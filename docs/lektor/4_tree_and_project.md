@@ -1,6 +1,3 @@
----
-typora-root-url: ../
----
 Lektor專案架構及Project檔案
 ======
 
@@ -76,7 +73,7 @@ included_assets = _special_file
 
   首先是預設的設定，他的網址樣式如下：
 
-  ![url_style_relative](/assets/螢幕快照 2019-09-10 上午1.04.43.png)
+  ![url_style_relative](../assets/2019091010443.png)
 
 - absolute
 
