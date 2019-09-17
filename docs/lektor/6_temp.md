@@ -1,7 +1,3 @@
----
-typora-root-url: ../
----
-
 Templates
 ===
 
@@ -158,4 +154,4 @@ type = markdown
     </body>
     ```
 8. 生成畫面如下：
-    ![about page](/assets/螢幕快照 2019-09-14 下午3.30.23.png)
+    ![about page](../assets/2019091433023.png)
