@@ -9,6 +9,7 @@ module.exports = {
         ['/', 'Day1_30天學習Lektor鐵人賽介紹 '],
         ['/lektor/2_installation', 'Day2_Lektor安裝說明'],
         ['/lektor/3_quick_start', 'Day3_quickstart'],
+        ['/lektor/4_tree_and_project', 'Day4_專案架構及Project檔案'],
       ],
       nav: [
         { text: 'Home', link: '/' },
