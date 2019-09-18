@@ -67,19 +67,21 @@ included_assets = _special_file
 
 #### url_style
 
-前面有提到url_style有三種形式，這邊以`blog`為例實際測試一下各種形式呈現的網址：
+前面有提到url_style有三種形式，這裡稍作說明：
 
 - relative
 
-  首先是預設的設定，他的網址樣式如下：
+  首先是預設的設定，網址的路徑會與網頁的路徑為主，他的網址樣式如下：
 
   ![url_style_relative](../assets/2019091010443.png)
 
 - absolute
 
-  
+  以檔案與主頁的絕對路徑顯示。
 
 - external
+
+  當有設定`url`的路徑時，可以設定url_style為external，提供給有網址設定特殊需求的管理者使用。
 
 ### [packages]
 
