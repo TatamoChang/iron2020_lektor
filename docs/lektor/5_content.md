@@ -7,17 +7,17 @@ Content
 - content中的每一個資料夾（包含content)中，需至少包含`contents.lr`。如下方範例，content目錄下有一個contents.lr，其他每一個子目錄下也各有一個：
     ```
     content/
-        contents.lr
-        portfolio/
-            contents.lr
-            project-a/
-                contents.lr
-                thumbnail.jpg
-            project-b/
-                contents.lr
-                thumbnail.jpg
-        about/
-            contents.lr
+    |___contents.lr
+    |___portfolio/
+    |   |___contents.lr
+    |   |___project-a/
+    |   |   |___contents.lr
+    |   |   |___thumbnail.jpg
+    |   |___project-b/
+    |       |___contents.lr
+    |       |___thumbnail.jpg
+    |___about/
+        |___contents.lr
     ```
 - Lektor對每一個contents.lr建立網址，如`content/portfolio/project-a/contents.lr`這個路徑，生成網頁時，其路徑為`/portfolio/project-a/`。
 
