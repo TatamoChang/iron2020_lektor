@@ -106,7 +106,7 @@ type = markdown
 以下將Lektor顯示about的邏輯簡要說明一遍，當使用Lektor在本機運行`lektor serve`，連線到`127.0.0.1:5000/about`，網站會作下列事情:
 
 1. 首先在`content`資料夾中找到`about/contents.lr`檔案，
-    ![tree view on about](/assets/螢幕快照 2019-09-14 下午3.15.16.png)
+    ![tree view on about](../assets/2019091431516.png)
 
     `about/contents.lr`內容如下：
 
