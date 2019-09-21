@@ -93,7 +93,7 @@ templates資料夾中包含`macros`及`partials`資料夾，以及許多html檔�
 </footer>
 ```
 
-這邊用到了`{{ config.THEME_SETTINGS.name }}`的項目，就會對應到前面提到的`.lektorproject`檔案中。如果有在檔案中設定`[theme_settings]`中的`name`，那生成網站時就會將這個資訊顯示在網頁中。以下是我在`.lektorproject`中的設定：
+這邊用到了`config.THEME_SETTINGS.name`的項目，就會對應到前面提到的`.lektorproject`檔案中。如果有在檔案中設定`[theme_settings]`中的`name`，那生成網站時就會將這個資訊顯示在網頁中。以下是我在`.lektorproject`中的設定：
 
 ```ini
 [project]
