@@ -12,6 +12,7 @@ module.exports = {
         ['/lektor/4_tree_and_project', 'Day4_專案架構及Project檔案'],
         ['/lektor/5_content', 'Day5_content'],
         ['/lektor/6_templates', 'Day6_templates'],
+        ['/lektor/7_themes', 'Day7_Themes'],
       ],
       nav: [
         { text: 'Home', link: '/' },
