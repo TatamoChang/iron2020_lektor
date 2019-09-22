@@ -1,31 +1,7 @@
 lektor-theme-nix的秘密
 ===
 
-在使用這個主題的時候，先看看[README](https://github.com/rlaverde/lektor-theme-nix/)裡面寫了什麼，在使用前先讀取README是個好習慣！README中還有提供可以在`.lektorproject`檔案裡面設定的參數：
-
-```ini
-[theme_settings]
-githubID = your_github
-gitlabId = your_gitlab
-twitterID = your_twitter
-codepenID = your_codepen
-linkedInID = your_linkedin
-googleplusID = your_googleplus
-facebookID = your_facebook
-instagramID = your_instagram
-telegramID = your_telegram
-name = your_name
-headerusername = username
-headerhostname = hostname
-email = your_email
-about = info_about_you
-profilepicture = profile_picture_asset_url
-googleanalytics = your_google_analytics_id
-slackURL = https://join.slack.com/...
-comments = yes
-```
-
-讀完README之後，讓我們來看一下`lektor-theme-nix`如何建立主題的。首先看一下他的架構：
+上一篇介紹如何設定並套用`lektor-theme-nix`主題，現在讓我們來看一下`lektor-theme-nix`如何建立主題的。首先看一下他的架構：
 
 ![lektor-theme-nix 架構](../assets/2019092013638.png)
 
@@ -53,7 +29,7 @@ templates資料夾中包含`macros`及`partials`資料夾，以及許多html檔�
 
 ### layout
 
-在看`partial`裡面的檔案前，先看一下`layout`裡面寫了什麼。
+在Django、Flask及Lektor等應用中，常常會將命名layout的檔案作為網頁主模板，在看`partial`裡面的檔案前，先看一下`layout`裡面寫了什麼。
 
 ```html
 <!DOCTYPE html>
