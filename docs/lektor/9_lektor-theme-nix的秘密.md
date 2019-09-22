@@ -58,7 +58,7 @@ templates資料夾中包含`macros`及`partials`資料夾，以及許多html檔�
 
 ```html
 <footer class="footer text-center">
-  <p>Copyright &copy; 2017 {{ config.THEME_SETTINGS.name }} -
+  <p>Copyright &copy; 2019 {{ config.THEME_SETTINGS.name }} -
     <span class="credit">
       Powered by
       <a target="_blank" href="https://www.getlektor.com">Lektor</a>
@@ -84,10 +84,79 @@ about = Tatamo
 comments = no
 ```
 
-我在檔案中有設定`[theme_settings]`中的`name = 塔塔默`，所以當我套用這個主題時，footer會讀到我設定的值，並顯示在網頁中。
+我在檔案中有設定`[theme_settings]`中的`name = 塔塔默`，所以當我套用這個主題時，footer會讀到我設定的值，並顯示在網頁中，變成『Copyright © 2019 塔塔默 -Powered by [Lektor](https://www.getlektor.com/) and [Nix](https://github.com/rlaverde/lektor-theme-nix/) theme.』。
+
+![footer](../assets/image-20190923002602667.png)
 
 ### head
 
+head.html程式碼比較多，都是在網頁的`head`標籤中引用網站需要的項目，如css, jQuery或是Bootstrap等。比較不一樣的是，這個主題很貼心的幫你設想到，如果你有引用`Google Analytics`的話，只要在`.lektorproject`檔案中，設定`[theme_settings]`裡`googleanalytics`的id，這個主題就會自動匯入。擷取head中有關Google Analytics的程式碼如下：
+
+```html
+<!-- Google Analytics -->
+{% if config.THEME_SETTINGS.googleanalytics %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', '{{ config.THEME_SETTINGS.googleanalytics }}', 'auto');
+    ga('send', 'pageview');
+
+</script>
+{% endif %}
+```
+
+可以看到他使用`{% if %}{% endif %}`設一個判斷式，假設你在`.lektorproject`檔案中有設定`[theme_settings]`裡`googleanalytics`的id，程式就會在網頁原始碼中加上這一段，並帶入你設定的googleanalytics id。
+
 ### header
 
+header.html裡放的為nav bar的排版，先看一下生成後的樣子，
+
+![nav bar](../assets/image-20190923012253928.png)
+
+再來看網頁原始碼：
+
+```html
+<header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- 左邊綠色Tatamo@Tatamo_host ~ $ -->
+      <a class="navbar-brand" id="green-terminal" href={{ '/'|url }}>{{config.THEME_SETTINGS.headerusername}}@{{config.THEME_SETTINGS.headerhostname}} ~ $</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href={{ '/'|url }}>/home/{{config.THEME_SETTINGS.headerusername}}</a>
+        </li>
+        {% for page in site.query('/') %}
+        {% if page.path != '/404' %}
+        <li >
+          <a href="{{page.url_path | url }}">~{{ page.path }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+```
+這邊也是用了許多Jinja2的功能，讓Lektor幫你把繁重的工作簡單化。像是`{% for page in site.query('/') %}{% endfor%}`這個區段，讓lektor直接在專案資料夾中搜尋所有目錄，並利用`<a href="{{page.url_path | url }}">~{{ page.path }}</a>`建立nav bar的項目，這樣一來，只要有新增主項目資料夾，這邊就會直接把你抓到所有連結，不用怕忘記加而出現隱藏頁面。
+
+> 這裡我發現一個bug，就是設定完主題後，nav bar會出現`~/404.html`的項目。因為README中提要到建立404網頁，需要命名資料夾為`404.html`而非`404`，實測也是`404.html`lektor才會理你。所以就順便給作者發了PR，希望能幫忙修正這個問題。
+
+
 ### social
+
