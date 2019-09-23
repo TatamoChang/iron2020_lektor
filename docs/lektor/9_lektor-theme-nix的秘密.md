@@ -159,7 +159,11 @@ header.html裡放的為nav bar的排版，先看一下生成後的樣子，
 </header>
 ```
 
-這邊也是用了許多Jinja2的功能，讓Lektor幫你把繁重的工作簡單化。像是```{% for page in site.query('/') %}{% endfor%}```這個區段，讓lektor直接在專案資料夾中搜尋所有目錄，並利用```<a href="{{page.url_path | url }}">~{{ page.path }}</a>```建立nav bar的項目，這樣一來，只要有新增主項目資料夾，這邊就會直接把你抓到所有連結，不用怕忘記加而出現隱藏頁面。
+這邊也是用了許多Jinja2的功能，讓Lektor幫你把繁重的工作簡單化。像是```{% for page in site.query('/') %}{% endfor%}```這個區段，讓lektor直接在專案資料夾中搜尋所有目錄，並利用
+```html
+<a href="{{page.url_path | url }}">~{{ page.path }}</a>
+```
+建立nav bar的項目，這樣一來，只要有新增主項目資料夾，這邊就會直接把你抓到所有連結，不用怕忘記加而出現隱藏頁面。
 
 > 這裡我發現一個bug，就是設定完主題後，nav bar會出現`~/404.html`的項目。因為README中提要到建立404網頁，需要命名資料夾為`404.html`而非`404`，實測也是`404.html`lektor才會理你。所以就順便給作者發了PR，希望能幫忙修正這個問題。
 
