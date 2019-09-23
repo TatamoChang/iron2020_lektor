@@ -13,6 +13,7 @@ module.exports = {
         ['/lektor/5_content', 'Day5_content'],
         ['/lektor/6_templates', 'Day6_templates'],
         ['/lektor/7_themes', 'Day7_Themes'],
+        ['/lektor/8_lektor-theme-nix設定.md', 'Day8_lektor-theme-nix設定'],
       ],
       nav: [
         { text: 'Home', link: '/' },
