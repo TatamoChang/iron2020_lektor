@@ -14,6 +14,7 @@ module.exports = {
         ['/lektor/6_templates', 'Day6_templates'],
         ['/lektor/7_themes', 'Day7_Themes'],
         ['/lektor/8_lektor-theme-nix設定.md', 'Day8_lektor-theme-nix設定'],
+        ['/lektor/9_lektor-theme-nix的秘密.md', 'Day9_lektor-theme-nix的秘密'],
       ],
       nav: [
         { text: 'Home', link: '/' },
