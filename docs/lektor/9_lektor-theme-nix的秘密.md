@@ -50,7 +50,7 @@ templates資料夾中包含`macros`及`partials`資料夾，以及許多html檔�
   </body>
 </html>
 ```
-可以看到layout共引用了3個檔案，包含下面會提到的`footer`, `head`, `header`。
+可以看到layout共引用了3個檔案，包含下面會提到的`footer`, `head`, `header`，以下將一一介紹。
 
 ### footer
 
@@ -69,7 +69,7 @@ templates資料夾中包含`macros`及`partials`資料夾，以及許多html檔�
 </footer>
 ```
 
-這邊用到了`config.THEME_SETTINGS.name`的項目，就會對應到前面提到的`.lektorproject`檔案中。如果有在檔案中設定`[theme_settings]`中的`name`，那生成網站時就會將這個資訊顯示在網頁中。以下是我在`.lektorproject`中的設定：
+這邊用到了```config.THEME_SETTINGS.name```的項目，將對應前面提到的`.lektorproject`檔案中。如果有在檔案中設定`[theme_settings]`中的`name`，那生成網站時就會將這個資訊顯示在網頁中。以下是我在`.lektorproject`中的設定：
 
 ```ini
 [project]
@@ -159,13 +159,13 @@ header.html裡放的為nav bar的排版，先看一下生成後的樣子，
 </header>
 ```
 
-這邊也是用了許多Jinja2的功能，讓Lektor幫你把繁重的工作簡單化。像是```{% for page in site.query('/') %}{% endfor%}```這個區段，讓lektor直接在專案資料夾中搜尋所有目錄，並利用
+這邊也是用了許多`Jinja2`的功能，讓Lektor幫你把繁重的工作簡單化。像是```{% for page in site.query('/') %}{% endfor%}```這個區段，讓lektor直接在專案資料夾中搜尋所有目錄，並利用
 ```html
 <a href="{{page.url_path | url }}">~{{ page.path }}</a>
 ```
 建立nav bar的項目，這樣一來，只要有新增主項目資料夾，這邊就會直接把你抓到所有連結，不用怕忘記加而出現隱藏頁面。
 
-> 這裡我發現一個bug，就是設定完主題後，nav bar會出現`~/404.html`的項目。因為README中提要到建立404網頁，需要命名資料夾為`404.html`而非`404`，實測也是`404.html`lektor才會理你。所以就順便給作者發了PR，希望能幫忙修正這個問題。
+> 這裡我發現一個bug，就是設定完主題後，nav bar會出現`~/404.html`的項目。因為README中提要到建立404網頁，需要命名資料夾為`404.html`而非`404`，實測也是`404.html`lektor才會理你。所以上面的判別式應該是```{% if page.path != '/404.html' %}```就順便給作者發了PR，希望能幫忙修正這個問題。
 
 ### social
 
@@ -207,8 +207,8 @@ partial資料夾中最後一個檔案。先看程式碼：
 {% endif %}
 ```
 
-以上每一個連結都會建立一個判定式，當你在`.lektorproject`檔案中有設定社群相關參數的時候，才會在網頁中顯示。像我在前面有提到我的設定內容，裡面包含`githubID`及`gitlabId`，所以lektor找到這2個資訊，就只會將`Github`與`Gitlab`顯示出來。如果你有更多資訊，只要在`.lektorproject`更新設定，系統就會幫你新增，是不是很方便呢!!
+以上每一個連結都有建立一個判定式，當你在`.lektorproject`檔案中有設定社群相關參數的時候，才會在網頁中顯示。像我在前面有提到我的設定內容，裡面包含`githubID`及`gitlabId`，所以lektor找到這2個資訊，就只會將`Github`與`Gitlab`顯示出來。如果你有更多資訊，只要在`.lektorproject`更新設定，系統就會幫你新增，是不是很方便呢!!
 
 ![lektor-theme-nix_完成設定畫面](../assets/image-20190922022618157.png)
 
-寫到這邊，其實今天的篇幅已經過長了。但在這個主題中還有一個東西出現在檔案，但是沒有顯示到網頁裡，就是`showcase.html`及`showcase-item.html`。下一篇將試著讓這2個功能可以放到網頁中，並再次將`content`, `model`, `template`的關係說明一遍。
+寫到這邊，其實今天的篇幅已經過長了。但在這個主題中還有一些東西出現在檔案，但是沒有顯示到網頁中，就是`showcase.html`及`showcase-item.html`。下一篇將試著讓這2個功能可以放到網頁中，並再次將`content`, `model`, `template`的關係說明一遍。另外還有`theme.ini`，也會在下一篇一同介紹。
