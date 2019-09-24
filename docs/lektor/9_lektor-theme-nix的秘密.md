@@ -1,4 +1,4 @@
-lektor-theme-nix的秘密
+服裝拆解大公開，lektor-theme-nix的秘密
 ===
 
 上一篇介紹如何設定並套用`lektor-theme-nix`主題，現在讓我們來看一下`lektor-theme-nix`如何建立主題的。首先看一下他的架構：

@@ -1,4 +1,4 @@
-Lektor專案架構及Project檔案
+Lektor專案透視鏡，皮肉骨一次看清
 ======
 
 讓我們先看一下Lektor quickstart blog範例的整個專案架構，進入專案資料夾中，會看到`1個檔案及4個資料夾`：
