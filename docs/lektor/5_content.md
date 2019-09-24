@@ -5,7 +5,7 @@ Content
 
 - content中的每一個資料夾都只負責一個頁面（等於一個網址）
 - content中的每一個資料夾（包含content)中，需至少包含`contents.lr`。如下方範例，content目錄下有一個contents.lr，其他每一個子目錄下也各有一個：
-    ```
+    ```ini
     content/
     |___contents.lr
     |___portfolio/
@@ -19,21 +19,27 @@ Content
     |___about/
         |___contents.lr
     ```
+
 - Lektor對每一個contents.lr建立網址，如`content/portfolio/project-a/contents.lr`這個路徑，生成網頁時，其路徑為`/portfolio/project-a/`。
 
-# Content, Model及Template的三角關係
+# Content, Model及Template與瀏覽器的戀情(?)
 
-以前學程式的時候有聽過三劍客`MVC`，也就是`Model`, `View`, `Controller`。在Lektor中，重要的三劍客則是`Content, Model及Template`。
+以前學程式的時候有聽過三劍客`MVC`，也就是`Model`, `View`, `Controller`。在Lektor中，重要的三劍客則是`Content, Model及Template`。以下是我接觸Lektor後，心中模擬的互動關係：
+
+![CMT戀情](../assets/1569313331889.png)
+
+看起來瀏覽器與`Content`、`Template`形成了三角戀情，但是在這段關係裡，model的付出是不可或缺的(大誤)
 
 ## Content與Model
 
 假設`content/portfolio/`中，要建立一個Model。此時model資料夾裡需要建立一個model的檔案，我先叫他`post.ini`，那在`content/portfolio/contents.lr`中可以透過`_model: post`建立與`post.ini`的關係：
 
-```lr
+```ini
 _model: post
 ---
 title: Portfolio
 ```
+
 在這邊要注意的是，Lektor規則，會先看`contents.lr`裡是否有指定model（`_model:`），若沒有的話，將會轉向指定預設`_model: post`。
 
 ## model 與 Template
@@ -44,7 +50,7 @@ title: Portfolio
 
 項目以`---`區隔，並以`key:value`的形式撰寫檔案。
 
-```
+```ini
 _model: page
 ---
 title: The Page Title
