@@ -1,4 +1,4 @@
-隱藏的口袋，試試showcase
+隱藏的口袋，showcase現出原形
 ===
 
 上一篇介紹了落落長lektor-theme-nix的祕密後，還是有一些3個檔案是比較不熟的：
