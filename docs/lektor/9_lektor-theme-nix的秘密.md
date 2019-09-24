@@ -211,4 +211,4 @@ partial資料夾中最後一個檔案。先看程式碼：
 
 ![lektor-theme-nix_完成設定畫面](../assets/image-20190922022618157.png)
 
-寫到這邊，其實今天的篇幅已經過長了。但在這個主題中還有一些東西出現在檔案，但是沒有顯示到網頁中，就是`showcase.html`及`showcase-item.html`。下一篇將試著讓這2個功能可以放到網頁中，並再次將`content`, `model`, `template`的關係說明一遍。另外還有`theme.ini`，也會在下一篇一同介紹。
+寫到這邊，其實今天的篇幅已經過長了。但在這個主題中還有一些東西出現在檔案，但是沒有顯示到網頁中，就是`showcase.html`及`showcase-item.html`。下一篇將試著讓這2個功能可以放到網頁中，另外還有`theme.ini`，也會在下一篇一同介紹。
