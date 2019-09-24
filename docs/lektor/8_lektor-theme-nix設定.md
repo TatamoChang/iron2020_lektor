@@ -1,4 +1,4 @@
-lektor-theme-nix設定
+教你如何穿衣服，lektor-theme-nix設定
 ===
 
 在使用這個主題的時候，先看看[README](https://github.com/rlaverde/lektor-theme-nix/)裡面寫了什麼，在使用前先讀取README是個好習慣！要完全使用這個主題的所有功能，需要完成5個步驟，以下接續說明：

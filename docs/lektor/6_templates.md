@@ -1,4 +1,4 @@
-Templates
+Lektor的門面，讓Templates來照顧!!
 ===
 
 接下來介紹一下Templates。Lektor使用`Jinja2`的格式產生網頁，若有興趣的話可以參考[Jinja2官網](http://jinja.pocoo.org/docs)。
