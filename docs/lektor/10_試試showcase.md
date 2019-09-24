@@ -159,5 +159,3 @@ cover_image: map_icon.png
 其中的`.thumbnail(480)`需要砍掉，圖片才能正常顯示喔！
 
 連續兩天找到bug了，不知道明天會不會有呢(?)
-
-下一篇將`content`, `model`, `template`的關係說明一遍。
