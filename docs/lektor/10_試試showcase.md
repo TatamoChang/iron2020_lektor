@@ -1,7 +1,7 @@
 隱藏的口袋，showcase現出原形
 ===
 
-上一篇介紹了落落長lektor-theme-nix的祕密後，還是有一些3個檔案是比較不熟的：
+上一篇介紹了落落長`lektor-theme-nix`的祕密後，還是有一些3個檔案是比較不熟的：
 
 1. theme.ini
 
@@ -43,7 +43,11 @@ lektor-disqus-comments = 0.2
 
 ## showcase
 
-可以看到`templates`資料夾中有`showcase.html`及`showcas-item.html`；models資料夾中也有`showcase.ini`及`showcas-item.ini`，卻不見`content`資料夾裡有showcase資料夾。所以說在使用quickstart建立基本blog專案，並套入這個主題時，沒有作任何更動，是不會看到showcase出現在網頁中。那這個showcase放在網頁中會長甚麼樣子呢?讓我們來看看！
+在[lektor官網](https://www.getlektor.com/showcase/)中就有showcase這個項目，裡面放置使用lektor製作的網站，其中包含`PyCon Philippines 2016`、`PyCon Colombia 2018`及`Lektor官網`都有放在其中，表現方式以圖片及網站名稱做排列。
+
+![image-20190925005400669](../assets/image-20190925005400669.png)
+
+現在讓我們看看`lektor-theme-nix`的showcase長什麼樣子吧！可以看到`templates`資料夾中有`showcase.html`及`showcas-item.html`；models資料夾中也有`showcase.ini`及`showcas-item.ini`，卻不見`content`資料夾裡有showcase資料夾。所以說在使用quickstart建立基本blog專案，並套入這個主題時，沒有作任何更動，是不會看到showcase出現在網頁中。那這個showcase放在網頁中會長甚麼樣子呢?讓我們來看看！
 
 ### model
 
