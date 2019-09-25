@@ -125,7 +125,10 @@ _model: blog
 
 ![1569405561308](../assets/1569405561308.png)
 
-想要改URL架構，可以在`blog.ini`檔案中將`slug_format = {{ (this.pub_date|dateformat('YYYY/M/') if this.pub_date) ~ this._id }}`加到`[children]`項目中：
+想要改URL架構，可以在`blog.ini`檔案中將這段文字加到`[children]`項目中：
+```
+slug_format = {{ (this.pub_date|dateformat('YYYY/M/') if this.pub_date) ~ this._id }}
+```
 
 ```ini
 [model]
@@ -149,3 +152,5 @@ per_page = 10
 ![1569405840034](../assets/1569405840034.png)
 
 可以看到路徑改為`/blog/2019/9/first-post/`
+
+看完之後我想blog這個功能對你來說已經駕輕就熟了吧！
