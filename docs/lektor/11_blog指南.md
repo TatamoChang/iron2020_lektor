@@ -58,8 +58,6 @@ label = Body
 type = markdown
 ```
 
-
-
 ## Templates
 
 ### blog.html
