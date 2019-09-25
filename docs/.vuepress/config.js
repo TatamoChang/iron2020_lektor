@@ -16,6 +16,7 @@ module.exports = {
         ['/lektor/8_lektor-theme-nix設定.md', 'Day8_教你如何穿衣服，lektor-theme-nix設定'],
         ['/lektor/9_lektor-theme-nix的秘密.md', 'Day9_服裝拆解大公開，lektor-theme-nix的秘密'],
         ['/lektor/10_試試showcase.md', 'Day10_隱藏的口袋，showcase現出原形'],
+		['/lektor/11_blog指南.md', 'Day11_快速指南之想寫部落格?Lektor也沒問題！'],
       ],
       nav: [
         { text: 'Home', link: '/' },

@@ -1,4 +1,4 @@
-# 30天學習Lektor鐵人賽介紹
+# 為何要折騰自己？分享Lektor心得 
 
 [Lektor 官方網站](https://www.getlektor.com/)
 
