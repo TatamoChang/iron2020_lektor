@@ -212,3 +212,12 @@ partial資料夾中最後一個檔案。先看程式碼：
 ![lektor-theme-nix_完成設定畫面](../assets/image-20190922022618157.png)
 
 寫到這邊，其實今天的篇幅已經過長了。但在這個主題中還有一些東西出現在檔案，但是沒有顯示到網頁中，就是`showcase.html`及`showcase-item.html`。下一篇將試著讓這2個功能可以放到網頁中，另外還有`theme.ini`，也會在下一篇一同介紹。
+
+# 團隊系列文
+CSScoke - [金魚都能懂的這個網頁畫面怎麼切 - 金魚都能懂了你還怕學不會嗎](https://ithelp.ithome.com.tw/users/20112550/ironman/2623)
+King Tzeng - [IoT沒那麼難！新手用JavaScript入門做自己的玩具～](https://ithelp.ithome.com.tw/users/20103130/ironman/2125)
+Hina Hina - [陣列大亂鬥](https://ithelp.ithome.com.tw/users/20120000/ironman/2256) 
+阿斬 - [Python 程式交易 30 天新手入門](https://ithelp.ithome.com.tw/users/20120536/ironman/2571)
+Clarence - [LINE bot 好好玩 30 天玩轉 LINE API](https://ithelp.ithome.com.tw/users/20117701/ironman/2634)
+塔塔默 - [用Python開發的網頁不能放到Github上？Lektor說可以！！](https://ithelp.ithome.com.tw/users/20112552/ironman/2735)
+Vita Ora - [好 Js 不學嗎 !? JavaScript 入門中的入門。](https://ithelp.ithome.com.tw/users/20112656/ironman/2782)
