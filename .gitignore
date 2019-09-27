@@ -1,5 +1,0 @@
-_book
-.DS_Store
-venv
-docs/.vuepress/dist
-node_modules
