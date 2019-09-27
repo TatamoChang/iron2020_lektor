@@ -1,6 +1,6 @@
 # 加入他，讓你的靜態網頁互動起來!!!
 
-前面[教你如何穿衣服，lektor-theme-nix設定](/8_lektor-theme-nix設定)中有提到如何在`lektor-theme-nix`主題中使用Disqus功能，本篇將帶你在Lektor網頁中的`任何地方`使用Disqus！
+前面[教你如何穿衣服，lektor-theme-nix設定](../lektor/8_lektor-theme-nix設定)中有提到如何在`lektor-theme-nix`主題中使用Disqus功能，本篇將帶你在Lektor網頁中的`任何地方`使用Disqus！
 
 ## 設定shortname
 
