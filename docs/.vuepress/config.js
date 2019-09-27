@@ -1,8 +1,8 @@
 module.exports = {
     title: '用Python開發的網頁不能放到Github上？Lektor說可以！！',
     description: '第 11 屆 iT 邦幫忙鐵人賽比賽文章',
-    base: '/30lektor/',
-    repo: 'https://github.com/HanInfinity/30lektor',
+    base: '/iron2020_lektor/',
+    repo: 'https://github.com/HanInfinity/iron2020_lektor',
     themeConfig: {
       sidebarDepth: 0,
       sidebar: [
@@ -23,7 +23,7 @@ module.exports = {
       nav: [
         { text: 'Home', link: '/' },
         { text: '鐵人賽連結', link: 'https://ithelp.ithome.com.tw/users/20112552/ironman/2735'},
-        { text: 'Github', link: 'https://github.com/HanInfinity/30lektor' }
+        { text: 'Github', link: 'https://github.com/HanInfinity/iron2020_lektor' }
       ]
     }
   }
