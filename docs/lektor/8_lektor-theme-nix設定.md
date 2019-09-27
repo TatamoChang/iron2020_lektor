@@ -43,10 +43,10 @@ _template: index.html
 $ lektor plugins add lektor-disqus-comments
 ```
 
-接下來在專案中新增`config`資料夾，並在資料夾中建立`disqus-comments.ini`，檔案中設定`shortname`，值可以自訂，我這邊設定他為`disqus`：
+接下來在專案中新增`config`資料夾，並在資料夾中建立`disqus-comments.ini`，檔案中設定`shortname`，值可以自訂，我這邊設定他為`30-lektor-test`：
 
 ```ini
-shortname = disqus
+shortname = 30-lektor-test
 ```
 
 另外必須在`.lektorproject`檔案中完成`comments = yes`設定，才會啟動回應功能喔！可參考下面設定結果的內容～

@@ -18,6 +18,7 @@ module.exports = {
         ['/lektor/10_試試showcase.md', 'Day10_隱藏的口袋，showcase現出原形'],
         ['/lektor/11_blog指南.md', 'Day11_想寫部落格?Lektor也沒問題！'],
         ['/lektor/12_類別指南.md', 'Day12_分類秘笈，再頑強的資料都會乖乖坐好 ！'],
+		['/lektor/13_disqus-comments.md', 'Day13_加入他，讓你的靜態網頁互動起來!!!'],
       ],
       nav: [
         { text: 'Home', link: '/' },
