@@ -20,6 +20,7 @@ module.exports = {
         ['/lektor/12_類別指南.md', 'Day12_分類秘笈，再頑強的資料都會乖乖坐好 ！'],
         ['/lektor/13_disqus-comments.md', 'Day13_加入他，讓你的靜態網頁互動起來!!!'],
         ['/lektor/14_404.md', 'Day14_404自己做，美到人人想犯錯!!!'],
+        ['/lektor/15_page-order.md', 'Day15_想怎麼排，就怎麼排！'],
       ],
       nav: [
         { text: 'Home', link: '/' },
