@@ -21,7 +21,8 @@ module.exports = {
         ['/lektor/13_disqus-comments.md', 'Day13_加入他，讓你的靜態網頁互動起來!!!'],
         ['/lektor/14_404.md', 'Day14_404自己做，美到人人想犯錯!!!'],
         ['/lektor/15_page-order.md', 'Day15_想怎麼排，就怎麼排！'],
-		['/lektor/16_pagination.md', 'Day16_分批大法，清單毫秒簡潔清爽!'],
+		    ['/lektor/16_pagination.md', 'Day16_分批大法，清單毫秒簡潔清爽!'],
+        ['/lektor/17_portfolio-sites.md', 'Day17_網頁創世紀，一篇說完Lektor網頁建置！'],
       ],
       nav: [
         { text: 'Home', link: '/' },
