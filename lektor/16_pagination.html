@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>分批大法，清單毫秒簡潔清爽! | 用Python開發的網頁不能放到Github上？Lektor說可以！！</title>
+    <meta name="description" content="第 11 屆 iT 邦幫忙鐵人賽比賽文章">
+    
+    
+    <link rel="preload" href="/iron2020_lektor/assets/css/0.styles.bd709f62.css" as="style"><link rel="preload" href="/iron2020_lektor/assets/js/app.feb6f3be.js" as="script"><link rel="preload" href="/iron2020_lektor/assets/js/2.c24c6f21.js" as="script"><link rel="preload" href="/iron2020_lektor/assets/js/8.b803c623.js" as="script"><link rel="prefetch" href="/iron2020_lektor/assets/js/10.413dec97.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/11.cc3e8406.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/12.37aef431.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/13.db6daee8.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/14.36afabdb.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/15.0bb759dc.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/16.1dd4122b.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/17.9177d1c2.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/18.7c93b8d7.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/19.ea26bf9a.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/20.3ec2cd63.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/21.0e32edc6.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/22.db6b960c.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/3.a25e48be.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/4.846ca730.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/5.7f692e37.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/6.a7403a19.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/7.727d2d11.js"><link rel="prefetch" href="/iron2020_lektor/assets/js/9.efd890c6.js">
+    <link rel="stylesheet" href="/iron2020_lektor/assets/css/0.styles.bd709f62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/iron2020_lektor/" class="home-link router-link-active"><!----> <span class="site-name">用Python開發的網頁不能放到Github上？Lektor說可以！！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/iron2020_lektor/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://ithelp.ithome.com.tw/users/20112552/ironman/2735" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鐵人賽連結
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HanInfinity/iron2020_lektor" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/iron2020_lektor/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://ithelp.ithome.com.tw/users/20112552/ironman/2735" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鐵人賽連結
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/HanInfinity/iron2020_lektor" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/iron2020_lektor/" class="sidebar-link">Day1_30天學習Lektor鐵人賽介紹 </a></li><li><a href="/iron2020_lektor/lektor/2_installation.html" class="sidebar-link">Day2_萬丈高樓平地起，Lektor打地基看這裡</a></li><li><a href="/iron2020_lektor/lektor/3_quick_start.html" class="sidebar-link">Day3_被說快不是你的權利，讓Lektor陪你......</a></li><li><a href="/iron2020_lektor/lektor/4_tree_and_project.html" class="sidebar-link">Day4_Lektor專案透視鏡，皮肉骨一次看清</a></li><li><a href="/iron2020_lektor/lektor/5_content.html" class="sidebar-link">Day5_Lektor的肉，還有看得見與看不見的戀情</a></li><li><a href="/iron2020_lektor/lektor/6_templates.html" class="sidebar-link">Day6_Lektor的門面，讓Templates來照顧!!</a></li><li><a href="/iron2020_lektor/lektor/7_themes.html" class="sidebar-link">Day7_時尚外衣任你挑，Lektor主題功能介紹</a></li><li><a href="/iron2020_lektor/lektor/8_lektor-theme-nix設定.html" class="sidebar-link">Day8_教你如何穿衣服，lektor-theme-nix設定</a></li><li><a href="/iron2020_lektor/lektor/9_lektor-theme-nix的秘密.html" class="sidebar-link">Day9_服裝拆解大公開，lektor-theme-nix的秘密</a></li><li><a href="/iron2020_lektor/lektor/10_試試showcase.html" class="sidebar-link">Day10_隱藏的口袋，showcase現出原形</a></li><li><a href="/iron2020_lektor/lektor/11_blog指南.html" class="sidebar-link">Day11_想寫部落格?Lektor也沒問題！</a></li><li><a href="/iron2020_lektor/lektor/12_類別指南.html" class="sidebar-link">Day12_分類秘笈，再頑強的資料都會乖乖坐好 ！</a></li><li><a href="/iron2020_lektor/lektor/13_disqus-comments.html" class="sidebar-link">Day13_加入他，讓你的靜態網頁互動起來!!!</a></li><li><a href="/iron2020_lektor/lektor/14_404.html" class="sidebar-link">Day14_404自己做，美到人人想犯錯!!!</a></li><li><a href="/iron2020_lektor/lektor/15_page-order.html" class="sidebar-link">Day15_想怎麼排，就怎麼排！</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="分批大法，清單毫秒簡潔清爽"><a href="#分批大法，清單毫秒簡潔清爽" aria-hidden="true" class="header-anchor">#</a> 分批大法，清單毫秒簡潔清爽!</h1> <p>當你的文章清單過長時，pagination會是你的好朋友，可以幫你將列表分頁，讓畫面更整潔！</p> <h2 id="設定pagination"><a href="#設定pagination" aria-hidden="true" class="header-anchor">#</a> 設定Pagination</h2> <p>以<code>blog</code>為例，我們會建立<code>blog.ini</code>，管理<code>blog</code>底下的文章，並建立<code>blog-post.ini</code>，管理每個文章所需要的內容。而<code>pagination</code>則是在<code>blog.ini</code>中設定：</p> <p><code>per_page = 10</code>為設定每頁的筆數，可依需求修改數字。</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[pagination]</span>
+<span class="token constant">enabled</span> <span class="token attr-value"><span class="token punctuation">=</span> yes</span>
+<span class="token constant">per_page</span> <span class="token attr-value"><span class="token punctuation">=</span> 10</span>
+
+</code></pre></div><h2 id="選擇對應資料"><a href="#選擇對應資料" aria-hidden="true" class="header-anchor">#</a> 選擇對應資料</h2> <p>設定完<code>pagination</code>後，需要讓頁面只顯示指定的資料(譬如第1頁)，使用方式如下，利用for迴圈進行篩選：</p> <p><code>templates/blog.html</code></p> <div class="language-jinja2 extra-class"><pre class="language-text"><code>{% for child in this.pagination.items %}
+  ...
+{% endfor %}
+</code></pre></div><h2 id="顯示頁碼總覽選項"><a href="#顯示頁碼總覽選項" aria-hidden="true" class="header-anchor">#</a> 顯示頁碼總覽選項</h2> <p>在macros中建立<code>pagination.html</code>檔案，建立頁碼總覽功能，也就是這個</p> <p><img src="data:image/png;base64,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" alt="1569913958741"></p> <p><code>macros/pagination.html</code></p> <div class="language-jinja2 extra-class"><pre class="language-text"><code>{% macro render_pagination(pagination) %}
+  &lt;div class=&quot;pagination&quot;&gt;
+    {% if pagination.has_prev %}
+      &lt;a href=&quot;{{ pagination.prev|url }}&quot;&gt;&amp;laquo; Previous&lt;/a&gt;
+    {% else %}
+      &lt;span class=&quot;disabled&quot;&gt;&amp;laquo; Previous&lt;/span&gt;
+    {% endif %}
+    | &lt;strong&gt;{{ pagination.page }}&lt;/strong&gt; |
+    {% if pagination.has_next %}
+      &lt;a href=&quot;{{ pagination.next|url }}&quot;&gt;Next &amp;raquo;&lt;/a&gt;
+    {% else %}
+      &lt;span class=&quot;disabled&quot;&gt;Next &amp;raquo;&lt;/span&gt;
+    {% endif %}
+  &lt;/div&gt;
+{% endmacro %}
+</code></pre></div><h2 id="使用macro"><a href="#使用macro" aria-hidden="true" class="header-anchor">#</a> 使用macro</h2> <p>在<code>template/blog.html</code>中引用macros</p> <div class="language-jinja2 extra-class"><pre class="language-text"><code>{% from &quot;macros/pagination.html&quot; import render_pagination %}
+{% if this.pagination.pages &gt; 1 %}
+  {{ render_pagination(this.pagination) }}
+{% endif %}
+</code></pre></div><h2 id="動手做一次"><a href="#動手做一次" aria-hidden="true" class="header-anchor">#</a> 動手做一次</h2> <p>使用quickstart建立空白專案，並建立models：</p> <p><strong>models/blog.ini</strong></p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[model]</span>
+<span class="token constant">name</span> <span class="token attr-value"><span class="token punctuation">=</span> Blog</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Blog</span>
+<span class="token constant">hidden</span> <span class="token attr-value"><span class="token punctuation">=</span> yes</span>
+
+<span class="token selector">[fields.title]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Title</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> string</span>
+
+<span class="token selector">[children]</span>
+<span class="token constant">model</span> <span class="token attr-value"><span class="token punctuation">=</span> blog-post</span>
+<span class="token constant">order_by</span> <span class="token attr-value"><span class="token punctuation">=</span> -pub_date, -title</span>
+
+<span class="token selector">[pagination]</span>
+<span class="token constant">enabled</span> <span class="token attr-value"><span class="token punctuation">=</span> yes</span>
+<span class="token constant">per_page</span> <span class="token attr-value"><span class="token punctuation">=</span> 3</span>
+</code></pre></div><p><strong>models/blog-post.ini</strong></p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[model]</span>
+<span class="token constant">name</span> <span class="token attr-value"><span class="token punctuation">=</span> Blog Post</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> {{ this.title }}</span>
+<span class="token constant">hidden</span> <span class="token attr-value"><span class="token punctuation">=</span> yes</span>
+
+<span class="token selector">[fields.title]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Title</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> string</span>
+<span class="token constant">size</span> <span class="token attr-value"><span class="token punctuation">=</span> large</span>
+
+<span class="token selector">[fields.author]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Author</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> string</span>
+<span class="token constant">width</span> <span class="token attr-value"><span class="token punctuation">=</span> 1/2</span>
+
+<span class="token selector">[fields.twitter_handle]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Twitter Handle</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> string</span>
+<span class="token constant">width</span> <span class="token attr-value"><span class="token punctuation">=</span> 1/4</span>
+<span class="token constant">addon_label</span> <span class="token attr-value"><span class="token punctuation">=</span> @</span>
+
+<span class="token selector">[fields.pub_date]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Publication date</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> date</span>
+<span class="token constant">width</span> <span class="token attr-value"><span class="token punctuation">=</span> 1/4</span>
+
+<span class="token selector">[fields.body]</span>
+<span class="token constant">label</span> <span class="token attr-value"><span class="token punctuation">=</span> Body</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> markdown</span>
+</code></pre></div><p>建立template</p> <p><strong>template/blog.html</strong></p> <div class="language-jinja2 extra-class"><pre class="language-text"><code>{% extends &quot;layout.html&quot; %}
+{% from &quot;macros/pagination.html&quot; import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+    {% for child in this.pagination.items %}
+    &lt;div class=&quot;blog-post&quot;&gt;
+          &lt;h2&gt;&lt;a href=&quot;{{ child|url }}&quot;&gt;{{ child.title }}&lt;/a&gt;&lt;/h2&gt;
+            {{ child.author }} on {{ child.pub_date }}
+    &lt;/div&gt;
+    {% endfor %}
+    {% if this.pagination.pages &gt; 1 %}
+        {{ render_pagination(this.pagination) }}
+    {% endif %}
+{% endblock %}
+</code></pre></div><p><strong>templates/blog-post.html</strong></p> <div class="language-jinja2 extra-class"><pre class="language-text"><code>{% extends &quot;layout.html&quot; %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+    &lt;div class=&quot;blog-post&quot;&gt;
+        {% if from_index %}
+        &lt;h2&gt;&lt;a href=&quot;{{ this|url }}&quot;&gt;{{ this.title }}&lt;/a&gt;&lt;/h2&gt;
+        {% else %}
+        &lt;h2&gt;{{ this.title }}&lt;/h2&gt;
+        {% endif %}
+        &lt;p class=&quot;meta&quot;&gt;
+        written by
+        {% if this.twitter_handle %}
+            &lt;a href=&quot;https://twitter.com/{{ this.twitter_handle
+            }}&quot;&gt;{{ this.author or this.twitter_handle }}&lt;/a&gt;
+        {% else %}
+            {{ this.author }}
+        {% endif %}
+        on {{ this.pub_date }}
+        &lt;/p&gt;
+        {{ this.body }}
+    &lt;/div&gt;
+{% endblock %}
+</code></pre></div><p>在layout中加入blog的項目：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nav navbar-nav<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        &lt;li{% if this._path == '/' %} class=&quot;active&quot;{% endif
+              %}&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ '/'|url }}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Welcome<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        {% for href, title in [
+        ['/projects', 'Projects'],
+        ['/blog', 'Blog'],
+        ['/about', 'About']
+        ] %}
+        &lt;li{% if this.is_child_of(href) %} class=&quot;active&quot;{% endif
+              %}&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ href|url }}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ title }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        {% endfor %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>然後進入編輯頁面，先建立blog頁面，然後在blog下建立好幾篇子頁面：</p> <blockquote><p>今天發生南方澳大橋坍塌事件，引用聯合新聞網的新聞來建立文章</p></blockquote> <p><img src="/iron2020_lektor/assets/img/1569917164168.c8440797.png" alt="1569917164168"></p> <p>建了10幾篇</p> <p><img src="/iron2020_lektor/assets/img/1569917265398.87154e36.png" alt="1569917265398"></p> <p>可以看到下面有出現選擇頁數的功能，每頁只顯示3筆</p> <p><img src="/iron2020_lektor/assets/img/1569917285532.958716f0.png" alt="1569917285532"></p> <p>修改成5筆試試：</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[pagination]</span>
+<span class="token constant">enabled</span> <span class="token attr-value"><span class="token punctuation">=</span> yes</span>
+<span class="token constant">per_page</span> <span class="token attr-value"><span class="token punctuation">=</span> 5</span>
+</code></pre></div><p>成功調整，運行正常!!</p> <p>不愧是分批大法，清單毫秒簡潔清爽!</p> <p><img src="/iron2020_lektor/assets/img/1569917373386.8f176adb.png" alt="1569917373386"></p> <h1 id="團隊系列文"><a href="#團隊系列文" aria-hidden="true" class="header-anchor">#</a> 團隊系列文</h1> <p>CSScoke - <a href="https://ithelp.ithome.com.tw/users/20112550/ironman/2623" target="_blank" rel="noopener noreferrer">金魚都能懂的這個網頁畫面怎麼切 - 金魚都能懂了你還怕學不會嗎<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+King Tzeng - <a href="https://ithelp.ithome.com.tw/users/20103130/ironman/2125" target="_blank" rel="noopener noreferrer">IoT沒那麼難！新手用JavaScript入門做自己的玩具～<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+Hina Hina - <a href="https://ithelp.ithome.com.tw/users/20120000/ironman/2256" target="_blank" rel="noopener noreferrer">陣列大亂鬥<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+阿斬 - <a href="https://ithelp.ithome.com.tw/users/20120536/ironman/2571" target="_blank" rel="noopener noreferrer">Python 程式交易 30 天新手入門<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+Clarence - <a href="https://ithelp.ithome.com.tw/users/20117701/ironman/2634" target="_blank" rel="noopener noreferrer">LINE bot 好好玩 30 天玩轉 LINE API<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+塔塔默 - <a href="https://ithelp.ithome.com.tw/users/20112552/ironman/2735" target="_blank" rel="noopener noreferrer">用Python開發的網頁不能放到Github上？Lektor說可以！！<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+Vita Ora - <a href="https://ithelp.ithome.com.tw/users/20112656/ironman/2782" target="_blank" rel="noopener noreferrer">好 Js 不學嗎 !? JavaScript 入門中的入門。<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/iron2020_lektor/assets/js/app.feb6f3be.js" defer></script><script src="/iron2020_lektor/assets/js/2.c24c6f21.js" defer></script><script src="/iron2020_lektor/assets/js/8.b803c623.js" defer></script>
+  </body>
+</html>
