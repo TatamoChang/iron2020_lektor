@@ -70,7 +70,32 @@ type = markdown
 
 **projects.html**
 
-這邊除了將專案排列顯示出來，若附件有照片的話則會顯示照片，並透過`imagemagick`調整圖片大小。再來設定子頁面的版面：
+這邊除了將專案排列顯示出來，若附件有照片的話則會顯示照片，並透過`imagemagick`調整圖片大小。
+
+```html
+{% extends "layout.html" %}
+{% block title %}Projects{% endblock %}
+{% block body %}
+  <h1>Projects</h1>
+  <div class="projects">
+  {% for project in this.children %}
+    <div class="project">
+      {% set image = project.attachments.images.first() %}
+      {% if image %}
+        <img src="{{ image.thumbnail(320)|url }}" alt="">
+      {% endif %}
+      <h2><a href="{{ project|url }}">{{ project.name }}</a>
+        <em>({{ project.date.year }})</em></h2>
+      <p><strong>{{ project.type }}</strong></p>
+    </div>
+  {% endfor %}
+  </div>
+{% endblock %}
+```
+
+**project.html**
+
+再來設定子頁面的版面：
 
 ```html
 {% extends "layout.html" %}
