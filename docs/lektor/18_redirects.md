@@ -1,4 +1,4 @@
-# Redirects
+# 這扇門關了，馬上幫你開另一扇窗
 
 在Lektor中設定自動導向非常地簡單！一樣從`model `、`template`、`content`依序下手：
 
