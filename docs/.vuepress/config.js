@@ -24,7 +24,8 @@ module.exports = {
 		['/lektor/16_pagination.md', 'Day16_分批大法，清單毫秒簡潔清爽!'],
         ['/lektor/17_portfolio-sites.md', 'Day17_網頁創世紀，一篇說完Lektor網頁建置！'],
         ['/lektor/18_redirects.md', 'Day18_這扇門關了，馬上幫你開另一扇窗！'],
-		['/lektor/19_single-page.md', 'Day19_我不轉彎唱上癮？Lektor可以讓網頁不轉彎！'],
+    ['/lektor/19_single-page.md', 'Day19_我不轉彎唱上癮？Lektor可以讓網頁不轉彎！'],
+    ['/lektor/20_sitemap.md', 'Day20_還在用手動做網站地圖嗎？Lektor秒生成給你看！'],
       ],
       nav: [
         { text: 'Home', link: '/' },
