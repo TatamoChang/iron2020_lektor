@@ -120,7 +120,7 @@ class HelloWorldPlugin(Plugin):
 
 ## 事件監聽
 
-lektor中的外掛執行方式以事件監聽為主，在外掛中設定的事件觸發時，啟動外掛並執行動作。例如上面建立的外掛，有設定`test_function()`，其動作會回傳一個字串：`'Value from plugin %s' % self.name`，轉換後就是`Value from plugin lektor-hello-world`。所以當我在網頁的template中加入`{{ test_function() }}`，就會在我要的位置收到回傳的資訊。如下，我在layout.html中加入，位置放在page的div區塊中，並在block上方，因此預期`Value from plugin lektor-hello-world`這一串文字會出現在所有頁面的內容上方的位置。
+lektor中的外掛執行方式以事件監聽為主，在外掛中設定的事件觸發時，啟動外掛並執行動作。例如上面建立的外掛，有設定`test_function()`，其動作會回傳一個字串：`'Value from plugin %s' % self.name`，轉換後就是`Value from plugin lektor-hello-world`。所以當我在網頁的template中加入```{{ test_function() }}```，就會在我要的位置收到回傳的資訊。如下，我在layout.html中加入，位置放在page的div區塊中，並在block上方，因此預期`Value from plugin lektor-hello-world`這一串文字會出現在所有頁面的內容上方的位置。
 
 ```html
 <!doctype html>
