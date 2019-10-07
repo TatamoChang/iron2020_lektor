@@ -21,7 +21,7 @@ module.exports = {
         ['/lektor/13_disqus-comments.md', 'Day13_加入他，讓你的靜態網頁互動起來!!!'],
         ['/lektor/14_404.md', 'Day14_404自己做，美到人人想犯錯!!!'],
         ['/lektor/15_page-order.md', 'Day15_想怎麼排，就怎麼排！'],
-		    ['/lektor/16_pagination.md', 'Day16_分批大法，清單毫秒簡潔清爽!'],
+		['/lektor/16_pagination.md', 'Day16_分批大法，清單毫秒簡潔清爽!'],
         ['/lektor/17_portfolio-sites.md', 'Day17_網頁創世紀，一篇說完Lektor網頁建置！'],
         ['/lektor/18_redirects.md', 'Day18_這扇門關了，馬上幫你開另一扇窗！'],
         ['/lektor/19_single-page.md', 'Day19_我不轉彎唱上癮？Lektor可以讓網頁不轉彎！'],
@@ -29,6 +29,7 @@ module.exports = {
         ['/lektor/21_webpack.md', 'Day21_老闆我要打包，Lektor也能用webpack！'],
         ['/lektor/22_plugins.md', 'Day22_裝上強力的武器，Lektor外掛介紹'],
 		['/lektor/23_data_modelling.md', 'Day23_Lektor強身健骨丸，建構你的強大model觀'],
+        ['/lektor/24_deployment.md', 'Day24_一條龍的服務，發布專案依舊不馬虎'],
       ],
       nav: [
         { text: 'Home', link: '/' },
