@@ -1,4 +1,4 @@
-# Model架構說明
+# Lektor強身健骨丸，建構你的強大model觀
 
 在lektor中，model扮演著很重要的角色(當然content及template也是)。接下來會以`models/page.ini`檔案作為範例，說明model的各項特性：
 

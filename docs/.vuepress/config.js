@@ -28,6 +28,7 @@ module.exports = {
         ['/lektor/20_sitemap.md', 'Day20_還在用手動做網站地圖嗎？Lektor秒生成給你看！'],
         ['/lektor/21_webpack.md', 'Day21_老闆我要打包，Lektor也能用webpack！'],
         ['/lektor/22_plugins.md', 'Day22_裝上強力的武器，Lektor外掛介紹'],
+		['/lektor/23_data_modelling.md', 'Day23_Lektor強身健骨丸，建構你的強大model觀'],
       ],
       nav: [
         { text: 'Home', link: '/' },
