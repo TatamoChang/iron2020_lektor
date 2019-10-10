@@ -31,6 +31,7 @@ module.exports = {
 		['/lektor/23_data_modelling.md', 'Day23_Lektor強身健骨丸，建構你的強大model觀'],
         ['/lektor/24_deployment.md', 'Day24_一條龍的服務，發布專案依舊不馬虎'],
         ['/lektor/25_ftp.md', 'Day25_古董級的傳輸協定！FTP部署方法'],
+        ['/lektor/26_rsync.md', 'Day26_沒在用FTP？沒關係，我們還有更厲害的武器！'],
       ],
       nav: [
         { text: 'Home', link: '/' },

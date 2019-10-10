@@ -36,7 +36,7 @@ target = ftp://tatamo:password@140.127.202.232:25/
 
 此時進入ftp上傳的資料夾，可以看到完整的靜態網頁檔案以及`.lektor`資料夾。`.lektor`裡面只有1個listing檔案，放置所有同步的網頁檔案資料。
 
-ftp部署設定真的超簡單！明天就要來講Github Pages了！！
+ftp部署設定真的超簡單！
 
 # 團隊系列文
 
