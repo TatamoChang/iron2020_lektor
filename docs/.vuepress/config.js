@@ -33,6 +33,7 @@ module.exports = {
         ['/lektor/25_ftp.md', 'Day25_古董級的傳輸協定！FTP部署方法'],
         ['/lektor/26_rsync.md', 'Day26_沒在用FTP？沒關係，我們還有更厲害的武器！'],
         ['/lektor/27_gitlab_pages.md', 'Day27_Git界的狐狸，與Lektor也有聯盟！！'],
+        ['/lektor/28_github_pages.md', 'Day28_看完你就會放到github了！！'],
       ],
       nav: [
         { text: 'Home', link: '/' },
