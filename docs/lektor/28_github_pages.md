@@ -1,4 +1,4 @@
-# 看完你就會放到Github了！！
+# 你問我Lektor愛Github有多深？
 
 Lektor 在GitHub Pages支援上比GitLab還要好一點，可以不用自己手動push上去，與前幾天提到的ftp、rsync一樣，可以直接在.lektorproject中進行設定：
 
