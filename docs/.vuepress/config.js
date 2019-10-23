@@ -35,6 +35,7 @@ module.exports = {
         ['/lektor/27_gitlab_pages.md', 'Day27_Git界的狐狸，與Lektor也有聯盟！！'],
         ['/lektor/28_github_pages.md', 'Day28_看完你就會放到github了！！'],
         ['/lektor/29_travis_ci.md', 'Day29_他，是Github的好夥伴'],
+		['/lektor/30_do_it_yourself.md', 'Day30_完賽，是另一階段的開始！'],
       ],
       nav: [
         { text: 'Home', link: '/' },
